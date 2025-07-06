@@ -1,0 +1,4 @@
+ACK Flag Count,Active Max,Active Mean,Active Min,Active Std,Flow Duration,Fwd Packet Length Max,Bwd Packet Length Max,Protocol,Label
+2,200,150,100,30,50000,1000,1100,6,0
+0,180,130,90,25,30000,800,700,17,1
+3,220,170,120,35,70000,1200,1300,6,0
