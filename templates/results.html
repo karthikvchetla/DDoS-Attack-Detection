@@ -1,0 +1,30 @@
+<!-- templates/results.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Prediction Results</title>
+    <style>
+        body { font-family: Arial, sans-serif; padding: 20px; }
+        table { border-collapse: collapse; width: 50%; margin: 0 auto; }
+        th, td { border: 1px solid #333; padding: 10px; text-align: center; }
+        th { background-color: #f2f2f2; }
+        h1 { text-align: center; }
+    </style>
+</head>
+<body>
+    <h1>DDoS Prediction Results</h1>
+    <table>
+        <tr>
+            <th>Row</th>
+            <th>Prediction</th>
+        </tr>
+        {% for i, pred in predictions %}
+        <tr>
+            <td>{{ i }}</td>
+            <td>{{ 'DDoS' if pred == 1 else 'Normal' }}</td>
+        </tr>
+        {% endfor %}
+    </table>
+</body>
+</html>
